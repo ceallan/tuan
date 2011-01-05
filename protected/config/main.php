@@ -44,7 +44,7 @@ return array(
 				'<controller:\w+>/<action:\w+>/*'=>'<controller>/<action>',
 			),
             'showScriptName'=>false,
-            'urlSuffix'=>'.htm'
+            'urlSuffix'=>'.html'
 		),
 
 		'db'=>array(
