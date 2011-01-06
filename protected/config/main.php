@@ -8,6 +8,8 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
+    // 默认控制器
+    // 'defaultController'=>'site',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -20,12 +22,16 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'123456',
 		),
-		*/
+        'admin',
+        'team'=>array(
+            'layout'=>'team_layout',
+        ),
+		
 	),
 
 	// application components
