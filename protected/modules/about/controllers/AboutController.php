@@ -1,6 +1,6 @@
 <?php
 
-class DefaultController extends Controller
+class AboutController extends Controller
 {
     public function init()
 	{
