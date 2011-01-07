@@ -28,8 +28,8 @@ return array(
 			'password'=>'123456',
 		),
         'admin',
-        'team'=>array(
-            'layout'=>'team_layout',
+        'about'=>array(
+            'layout'=>'about_layout',
         ),
 		
 	),
