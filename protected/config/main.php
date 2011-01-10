@@ -53,19 +53,28 @@ return array(
             'urlSuffix'=>'.html'
 		),
 
+/*
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),
+*/
 		// uncomment the following to use a MySQL database
-		/*
+
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
-			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
-			'charset' => 'utf8',
+            'class'=>'CDbConnection',
+			'connectionString'=>'mysql:host=localhost;dbname=',
+			'username'=>'root',
+			'password'=>'phpwind.net',
+			'charset'=>'utf8',
+			'tablePrefix'=>'t_',
+			'schemaCachingDuration'=>3600,
+			'enableParamLogging'=>true,
 		),
-		*/
+
+		'cache'=>array(
+			'class'=>'system.caching.CFileCache',
+			'directoryLevel'=>'2',
+		),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',
