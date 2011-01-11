@@ -10,6 +10,7 @@ class DefaultController extends Controller
 
 	public function actionIndex()
 	{
-		$this->render('index');
+        //var_dump(CHtml::encode($_GET['locate']));
+		$this->render('index',array('locate'=>1111111));
 	}
 }

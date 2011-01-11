@@ -1,5 +1,3 @@
-/*(C) 2001-2099 Comsenz Inc.*/
-
 *{ word-wrap:break-word; outline:none; }
 body{ background:#FFF; text-align:center; }
 body, td, input, textarea, select, button{ color:#555; font:12px "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; }
@@ -401,7 +399,7 @@ h3{ margin-bottom:10px; font-size:14px; color:#09C; }
 .header, .header td, .header th{ border-top: 1px dotted #DEEFFB; font-weight: 700; }
 .smallefont{font-size: 11px}
 
-/* µ¯´° */
+/* å¼¹çª— */
 .fwin { text-align: left; background: #FFF; }
 .t_l, .t_c, .t_r, .m_l, .m_r, .b_l, .b_c, .b_r { overflow: hidden; background: #000; opacity: 0.2; filter: alpha(opacity=20); }
 .t_l, .t_r, .b_l, .b_r { width: 10px; height: 10px; line-height: 10px; font-size: 0; }
@@ -434,14 +432,14 @@ h3{ margin-bottom:10px; font-size:14px; color:#09C; }
 .fwin .ss em { background: #eee; width: 16px; line-height: 18px; display: block; float: left; margin: 2px; cursor: pointer; padding-left: 7px;}
 .fwin .ss em.a { background: #09f; color: #FFF;}
 
-/* .cl --> Clear ×Ô¶¯±ÕºÏ */
+/* .cl --> Clear è‡ªåŠ¨é—­åˆ */
 .cl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 .cl { zoom: 1; }
 
 .preview { margin-bottom: 8px; width: 570px; height: 340px; border: 1px solid #09C; box-shadow: 3px 3px 3px #EEE; -moz-box-shadow: 3px 3px 3px #EEE; -webkit-box-shadow: 3px 3px 3px #EEE; -o-box-shadow: 3px 3px 3px #EEE; }
 
 
-/*ÆøÅİĞÅÏ¢ by dfox */
+/*æ°”æ³¡ä¿¡æ¯ by dfox */
 .prmm { margin-left: -27px; padding-top: 10px; width: 250px; background: transparent url(pm_ntc.gif) no-repeat 0 0; text-align: left; opacity: 0.98; }
 	.prmc { padding-bottom: 10px; background: transparent url(pm_ntc.gif) no-repeat -250px 100%; }
 		.prmm ul { padding: 0 10px; border: solid #91C8E2; border-width: 0 2px; background: #FFF; }
@@ -451,7 +449,7 @@ h3{ margin-bottom:10px; font-size:14px; color:#09C; }
 	.up .prmc { padding-top: 5px; padding-bottom: 0; background-position: -650px 0; }
 		.up li { border-bottom: none; line-height: 160%; }
 		
-/* Í¨ÓÃµÄ±íµ¥ÑùÊ½ */
+/* é€šç”¨çš„è¡¨å•æ ·å¼ */
 	.tfm { width: 100%; }
 		.tfm caption, .tfm th, .tfm td { padding: 10px 2px; }
 			.tfm caption h2 { font-size: 16px; }
@@ -470,7 +468,7 @@ h3{ margin-bottom:10px; font-size:14px; color:#09C; }
 	.bn .tfm caption, .bn .tfm th, .bn .tfm td { padding-top: 5px; padding-bottom: 5px; }
 		.bn .tfm th { font-weight: 400; }
 		
-/* ÆÕÍ¨Êı¾İÁĞ±í datatable by michael */
+/* æ™®é€šæ•°æ®åˆ—è¡¨ datatable by michael */
 
 .dt { border-top: 1px solid #CDCDCD; width: 100%; }
 	.dt th { background: #F2F2F2; }
@@ -479,7 +477,7 @@ h3{ margin-bottom:10px; font-size:14px; color:#09C; }
 	.dt .px { height: 16px !important; font-size: 12px; }
 
 
-/* Íâ±ß¾à Margin£¬Èı×é´ÓÕ­µ½¿í£¬¼¶±ğ·Ö±ğÎª£ºn, m, w */
+/* å¤–è¾¹è· Marginï¼Œä¸‰ç»„ä»çª„åˆ°å®½ï¼Œçº§åˆ«åˆ†åˆ«ä¸ºï¼šn, m, w */
 	.mtn { margin-top: 5px !important; }
 	.mbn { margin-bottom: 5px !important; }
 	.mtm { margin-top: 10px !important; }

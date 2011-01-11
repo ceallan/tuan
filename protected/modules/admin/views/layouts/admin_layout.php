@@ -1,9 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="language" content="en" />
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/static/images/admincp/admincp.css" />
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/static/js/admincp.js" type="text/javascript"></script>
 <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -18,12 +19,22 @@
 
 <div class="uinfo" id="frameuinfo">
 <p>你好, 创始人 <em>admin</em> [ <a href="admin.php?action=logout" target="_top">退出</a> ]</p>
-<p class="btnlink"><a href="index.php" target="_blank">站点首页</a></p>
+<p class="btnlink"><a href="/" target="_blank">站点首页</a></p>
 </div>
 <div class="navbg"></div>
 <div class="nav">
 <ul id="topmenu">
-<li><em><a href="admin.php?action=index" id="header_index" hidefocus="true" onmouseover="previewheader('index')" onmouseout="previewheader()" onclick="toggleMenu('index', 'index');doane(event);">首页</a></em></li><li><em><a href="admin.php?action=setting&operation=basic" id="header_global" hidefocus="true" onmouseover="previewheader('global')" onmouseout="previewheader()" onclick="toggleMenu('global', 'setting&operation=basic');doane(event);">全局</a></em></li><li><em><a href="admin.php?action=nav&operation=headernav" id="header_style" hidefocus="true" onmouseover="previewheader('style')" onmouseout="previewheader()" onclick="toggleMenu('style', 'nav&operation=headernav');doane(event);">界面</a></em></li><li><em><a href="admin.php?action=moderate" id="header_topic" hidefocus="true" onmouseover="previewheader('topic')" onmouseout="previewheader()" onclick="toggleMenu('topic', 'moderate');doane(event);">内容</a></em></li><li><em><a href="admin.php?action=members&operation=search" id="header_user" hidefocus="true" onmouseover="previewheader('user')" onmouseout="previewheader()" onclick="toggleMenu('user', 'members&operation=search');doane(event);">用户</a></em></li><li><em><a href="admin.php?action=portalcategory" id="header_portal" hidefocus="true" onmouseover="previewheader('portal')" onmouseout="previewheader()" onclick="toggleMenu('portal', 'portalcategory');doane(event);">门户</a></em></li><li><em><a href="admin.php?action=forums" id="header_forum" hidefocus="true" onmouseover="previewheader('forum')" onmouseout="previewheader()" onclick="toggleMenu('forum', 'forums');doane(event);">论坛</a></em></li><li><em><a href="admin.php?action=group&operation=setting" id="header_group" hidefocus="true" onmouseover="previewheader('group')" onmouseout="previewheader()" onclick="toggleMenu('group', 'group&operation=setting');doane(event);">群组</a></em></li><li><em><a href="admin.php?action=adv" id="header_extended" hidefocus="true" onmouseover="previewheader('extended')" onmouseout="previewheader()" onclick="toggleMenu('extended', 'adv');doane(event);">扩展</a></em></li><li><em><a href="admin.php?action=plugins" id="header_plugin" hidefocus="true" onmouseover="previewheader('plugin')" onmouseout="previewheader()" onclick="toggleMenu('plugin', 'plugins');doane(event);">插件</a></em></li><li><em><a href="admin.php?action=tools&operation=updatecache" id="header_tools" hidefocus="true" onmouseover="previewheader('tools')" onmouseout="previewheader()" onclick="toggleMenu('tools', 'tools&operation=updatecache');doane(event);">工具</a></em></li><li><em><a href="admin.php?action=founder&operation=perm" id="header_founder" hidefocus="true" onmouseover="previewheader('founder')" onmouseout="previewheader()" onclick="toggleMenu('founder', 'founder&operation=perm');doane(event);">站长</a></em></li><li><em><a id="header_uc" hidefocus="true" href="http://www.dz.com/uc_server/admin.php?m=frame" onmouseover="previewheader('uc')" onmouseout="previewheader()" onclick="uc_login=1;toggleMenu('uc', '');doane(event);">UCenter</a></em></li>
+<li><em><a href="admin.php?action=index" id="header_index" hidefocus="true" onmouseover="previewheader('index')" onmouseout="previewheader()" onclick="toggleMenu('index', 'index');doane(event);">首页</a></em></li>
+<li><em><a href="admin.php?action=setting&operation=basic" id="header_global" hidefocus="true" onmouseover="previewheader('global')" onmouseout="previewheader()" onclick="toggleMenu('global', 'setting&operation=basic');doane(event);">全局</a></em></li>
+<li><em><a href="admin.php?action=nav&operation=headernav" id="header_style" hidefocus="true" onmouseover="previewheader('style')" onmouseout="previewheader()" onclick="toggleMenu('style', 'nav&operation=headernav');doane(event);">界面</a></em></li>
+<li><em><a href="admin.php?action=moderate" id="header_topic" hidefocus="true" onmouseover="previewheader('topic')" onmouseout="previewheader()" onclick="toggleMenu('topic', 'moderate');doane(event);">内容</a></em></li><li><em><a href="admin.php?action=members&operation=search" id="header_user" hidefocus="true" onmouseover="previewheader('user')" onmouseout="previewheader()" onclick="toggleMenu('user', 'members&operation=search');doane(event);">用户</a></em></li>
+<li><em><a href="admin.php?action=portalcategory" id="header_portal" hidefocus="true" onmouseover="previewheader('portal')" onmouseout="previewheader()" onclick="toggleMenu('portal', 'portalcategory');doane(event);">门户</a></em></li>
+<li><em><a href="admin.php?action=forums" id="header_forum" hidefocus="true" onmouseover="previewheader('forum')" onmouseout="previewheader()" onclick="toggleMenu('forum', 'forums');doane(event);">论坛</a></em></li>
+<li><em><a href="admin.php?action=group&operation=setting" id="header_group" hidefocus="true" onmouseover="previewheader('group')" onmouseout="previewheader()" onclick="toggleMenu('group', 'group&operation=setting');doane(event);">群组</a></em></li>
+<li><em><a href="admin.php?action=adv" id="header_extended" hidefocus="true" onmouseover="previewheader('extended')" onmouseout="previewheader()" onclick="toggleMenu('extended', 'adv');doane(event);">扩展</a></em></li>
+<li><em><a href="admin.php?action=plugins" id="header_plugin" hidefocus="true" onmouseover="previewheader('plugin')" onmouseout="previewheader()" onclick="toggleMenu('plugin', 'plugins');doane(event);">插件</a></em></li>
+<li><em><a href="admin.php?action=tools&operation=updatecache" id="header_tools" hidefocus="true" onmouseover="previewheader('tools')" onmouseout="previewheader()" onclick="toggleMenu('tools', 'tools&operation=updatecache');doane(event);">工具</a></em></li>
+<li><em><a href="admin.php?action=founder&operation=perm" id="header_founder" hidefocus="true" onmouseover="previewheader('founder')" onmouseout="previewheader()" onclick="toggleMenu('founder', 'founder&operation=perm');doane(event);">站长</a></em></li>
 
 </ul>
 <div class="currentloca">
@@ -33,7 +44,6 @@
 <div class="sitemapbtn">
 	<div style="float: left; margin:-7px 10px 0 0"><form name="search" method="post" autocomplete="off" action="admin.php?action=search" target="main"><input type="text" name="keywords" value="" class="txt" /> <input type="hidden" name="searchsubmit" value="yes" class="btn" /><input type="submit" name="searchsubmit" value="搜索" class="btn" style="margin-top: 5px;vertical-align:middle" /></form></div>
 	<span id="add2custom" style="display: none"></span>
-	<a href="###" id="cpmap" onclick="showMap();return false;"><img src="static/image/admincp/btn_map.gif" title="管理中心导航(ESC键)" width="46" height="18" /></a>
 </div>
 </div>
 </div>
@@ -48,13 +58,13 @@
 </div>
 </td>
 <td valign="top" width="100%" class="mask">
-	<iframe src="" id="main" name="main" width="100%" height="100%" frameborder="0" scrolling="yes" style="overflow: visible;display:"></iframe>
+	<iframe src="http://dev.770576.com/admin/index" id="main" name="main" width="100%" height="100%" frameborder="0" scrolling="yes" style="overflow: visible;"></iframe>
 </td>
 </tr>
 </table>
 <div id="scrolllink" style="display: none">
-	<span onclick="menuScroll(1)"><img src="static/image/admincp/scrollu.gif" /></span>
-	<span onclick="menuScroll(2)"><img src="static/image/admincp/scrolld.gif" /></span>
+	<span onclick="menuScroll(1)"><img src="static/images/admincp/scrollu.gif" /></span>
+	<span onclick="menuScroll(2)"><img src="static/images/admincp/scrolld.gif" /></span>
 </div>
 <div class="copyright">
 	<p>Powered by Tuan V1.0</p>
@@ -66,258 +76,103 @@
 </div>
 
 <script type="text/JavaScript">
-	var headers = new Array('index','global','style','topic','user','portal','forum','group','extended','plugin','tools','founder','uc'), admincpfilename = 'admin.php', menukey = '';
+    var BROWSER = {};
+    var USERAGENT = navigator.userAgent.toLowerCase();
+    browserVersion({'ie':'msie','firefox':'','chrome':'','opera':'','safari':'','mozilla':'','webkit':'','maxthon':'','qq':'qqbrowser'});
+    if(BROWSER.safari) {
+        BROWSER.firefox = true;
+    }
+    BROWSER.opera = BROWSER.opera ? opera.version() : 0;
+    var userAgent = navigator.userAgent.toLowerCase();
+    var is_opera = userAgent.indexOf('opera') != -1 && opera.version();
+    var is_moz = (navigator.product == 'Gecko') && userAgent.substr(userAgent.indexOf('firefox') + 8, 3);
+    var is_ie = (userAgent.indexOf('msie') != -1 && !is_opera) && userAgent.substr(userAgent.indexOf('msie') + 5, 3);
+
+    function TG(id) {
+        return document.getElementById(id);
+    }
+
+    Array.prototype.push = function(value) {
+        this[this.length] = value;
+        return this.length;
+    }
+    function _attachEvent(obj, evt, func, eventobj) {
+        eventobj = !eventobj ? obj : eventobj;
+        if(obj.addEventListener) {
+            obj.addEventListener(evt, func, false);
+        } else if(eventobj.attachEvent) {
+            obj.attachEvent('on' + evt, func);
+        }
+    }
+
+    function _detachEvent(obj, evt, func, eventobj) {
+        eventobj = !eventobj ? obj : eventobj;
+        if(obj.removeEventListener) {
+            obj.removeEventListener(evt, func, false);
+        } else if(eventobj.detachEvent) {
+            obj.detachEvent('on' + evt, func);
+        }
+    }
+    function browserVersion(types) {
+        var other = 1;
+        for(i in types) {
+            var v = types[i] ? types[i] : i;
+            if(USERAGENT.indexOf(v) != -1) {
+                var re = new RegExp(v + '(\\/|\\s)([\\d\\.]+)', 'ig');
+                var matches = re.exec(USERAGENT);
+                var ver = matches != null ? matches[2] : 0;
+                other = ver !== 0 && v != 'mozilla' ? 0 : other;
+            }else {
+                var ver = 0;
+            }
+            eval('BROWSER.' + i + '= ver');
+        }
+        BROWSER.other = other;
+    }
+
+	var headers = new Array('index','global','style','topic','user','portal','forum','group','extended','plugin','tools','founder','uc'), menukey = 'index';
 	function switchheader(key) {
-		if(!key || !$('header_' + key)) {
+		if(!key || !TG('header_' + key)) {
 			return;
 		}
 		for(var k in top.headers) {
-			if($('menu_' + headers[k])) {
-				$('menu_' + headers[k]).style.display = headers[k] == key ? '' : 'none';
+			if(TG('menu_' + headers[k])) {
+				TG('menu_' + headers[k]).style.display = headers[k] == key ? '' : 'none';
 			}
 		}
-		var lis = $('topmenu').getElementsByTagName('li');
+		var lis = TG('topmenu').getElementsByTagName('li');
 		for(var i = 0; i < lis.length; i++) {
 			if(lis[i].className == 'navon') lis[i].className = '';
 		}
-		$('header_' + key).parentNode.parentNode.className = 'navon';
+		TG('header_' + key).parentNode.parentNode.className = 'navon';
 	}
 	var headerST = null;
 	function previewheader(key) {
 		if(key) {
 			headerST = setTimeout(function() {
 				for(var k in top.headers) {
-					if($('menu_' + headers[k])) {
-						$('menu_' + headers[k]).style.display = headers[k] == key ? '' : 'none';
+					if(TG('menu_' + headers[k])) {
+						TG('menu_' + headers[k]).style.display = headers[k] == key ? '' : 'none';
 					}
 				}
-				var hrefs = $('menu_' + key).getElementsByTagName('a');
+				var hrefs = TG('menu_' + key).getElementsByTagName('a');
 				for(var j = 0; j < hrefs.length; j++) {
 					hrefs[j].className = '';
 				}
-			}, 1000);
+			}, 500);
 		} else {
 			clearTimeout(headerST);
 		}
 	}
-	function toggleMenu(key, url) {
+	function toggleMenu(key) {
 		menukey = key;
 		switchheader(key);
-		if(url) {
-			parent.main.location = admincpfilename + '?action=' + url;
-			var hrefs = $('menu_' + key).getElementsByTagName('a');
-			for(var j = 0; j < hrefs.length; j++) {
-				hrefs[j].className = j == (key == 'plugin' ? 1 : 0) ? 'tabon' : '';
-			}
-		}
-		if(key == 'uc') {
-			parent.main.location = $('header_uc').href + '&a=main&iframe=1';
-		}
-		setMenuScroll();
-	}
-	function setMenuScroll() {
-		$('frametable').style.width = document.body.offsetWidth < 1000 ? '1000px' : '100%';
-		var obj = $('menu_' + menukey);
-		if(!obj) {
-			return;
-		}
-		var scrollh = document.body.offsetHeight - 160;
-		obj.style.overflow = 'visible';
-		obj.style.height = '';
-		$('scrolllink').style.display = 'none';
-		if(obj.offsetHeight + 150 > document.body.offsetHeight && scrollh > 0) {
-			obj.style.overflow = 'hidden';
-			obj.style.height = scrollh + 'px';
-			$('scrolllink').style.display = '';
-		}
-	}
-	function resizeHeadermenu() {
-		var lis = $('topmenu').getElementsByTagName('li');
-		var maxsize = $('frameuinfo').offsetLeft - 160, widths = 0, moi = -1, mof = '';
-		if($('menu_mof')) {
-			$('topmenu').removeChild($('menu_mof'));
-		}
-		if($('menu_mof_menu')) {
-			$('append_parent').removeChild($('menu_mof_menu'));
-		}
-		for(var i = 0; i < lis.length; i++) {
-			widths += lis[i].offsetWidth;
-			if(widths > maxsize) {
-				lis[i].style.visibility = 'hidden';
-				var sobj = lis[i].childNodes[0].childNodes[0];
-				if(sobj) {
-					mof += '<a href="'+ sobj.getAttribute('href') + '" onclick="$(\'' + sobj.id + '\').onclick()">&rsaquo; ' + sobj.innerHTML + '</a><br style="clear:both" />';
-				}
-			} else {
-				lis[i].style.visibility = 'visible';
-			}
-		}
-		if(mof) {
-			for(var i = 0; i < lis.length; i++) {
-				if(lis[i].style.visibility == 'hidden') {
-					moi = i;
-					break;
-				}
-			}
-			mofli = document.createElement('li');
-			mofli.innerHTML = '<em><a href="javascript:;">&raquo;</a></em>';
-			mofli.onmouseover = function () { showMenu({'ctrlid':'menu_mof','pos':'43'}); }
-			mofli.id = 'menu_mof';
-			$('topmenu').insertBefore(mofli, lis[moi]);
-			mofmli = document.createElement('li');
-			mofmli.className = 'popupmenu_popup';
-			mofmli.style.width = '150px';
-			mofmli.innerHTML = mof;
-			mofmli.id = 'menu_mof_menu';
-			mofmli.style.display = 'none';
-			$('append_parent').appendChild(mofmli);
-		}
-	}
-	function menuScroll(op, e) {
-		var obj = $('menu_' + menukey);
-		var scrollh = document.body.offsetHeight - 160;
-		if(op == 1) {
-			obj.scrollTop = obj.scrollTop - scrollh;
-		} else if(op == 2) {
-			obj.scrollTop = obj.scrollTop + scrollh;
-		} else if(op == 3) {
-			if(!e) e = window.event;
-			if(e.wheelDelta <= 0 || e.detail > 0) {
-				obj.scrollTop = obj.scrollTop + 20;
-			} else {
-				obj.scrollTop = obj.scrollTop - 20;
-			}
-		}
 	}
 	function menuNewwin(obj) {
 		window.open(obj.parentNode.href);
-		doane();
-	}
-	function initCpMenus(menuContainerid) {
-		var key = '', lasttabon1 = null, lasttabon2 = null, hrefs = $(menuContainerid).getElementsByTagName('a');
-		for(var i = 0; i < hrefs.length; i++) {
-			if(menuContainerid == 'leftmenu' && 'action=misc&operation=custommenu&do=add&title=%B1%E0%BC%AD%B3%A3%D3%C3%B2%D9%D7%F7&url=action%253Dmisc%2526operation%253Dcustommenu'.indexOf(hrefs[i].href.substr(hrefs[i].href.indexOf(admincpfilename + '?') + admincpfilename.length + 1)) != -1) {
-				if(lasttabon1) {
-					lasttabon1.className = '';
-				}
-				key = hrefs[i].parentNode.parentNode.id.substr(5);
-				hrefs[i].className = 'tabon';
-				lasttabon1 = hrefs[i];
-			}
-			if(!hrefs[i].getAttribute('ajaxtarget')) hrefs[i].onclick = function() {
-				if(menuContainerid != 'custommenu') {
-					var lis = $(menuContainerid).getElementsByTagName('li');
-					for(var k = 0; k < lis.length; k++) {
-						if(lis[k].firstChild && lis[k].firstChild.className != 'menulink') lis[k].firstChild.className = '';
-					}
-					if(this.className == '') this.className = menuContainerid == 'leftmenu' ? 'tabon' : '';
-				}
-				if(menuContainerid != 'leftmenu') {
-					var hk, currentkey;
-					var leftmenus = $('leftmenu').getElementsByTagName('a');
-					for(var j = 0; j < leftmenus.length; j++) {
-						hk = leftmenus[j].parentNode.parentNode.id.substr(5);
-						if(this.href.indexOf(leftmenus[j].href) != -1) {
-							if(lasttabon2) {
-								lasttabon2.className = '';
-							}
-							leftmenus[j].className = 'tabon';
-							lasttabon2 = leftmenus[j];
-							if(hk != 'index') currentkey = hk;
-						} else {
-							leftmenus[j].className = '';
-						}
-					}
-					if(currentkey) toggleMenu(currentkey);
-					hideMenu();
-				}
-			}
-		}
-		return key;
-	}
-	var header_key = initCpMenus('leftmenu');
-	toggleMenu(header_key ? header_key : 'index');
-	function initCpMap() {
-		var ul, hrefs, s = '', count = 0;
-		for(var k in headers) {
-			if(headers[k] != 'index' && headers[k] != 'uc') {
-				s += '<td valign="top"><ul class="cmblock"><li><h4>' + $('header_' + headers[k]).innerHTML + '</h4></li>';
-				ul = $('menu_' + headers[k]);
-				if(!ul) {
-					continue;
-				}
-				hrefs = ul.getElementsByTagName('a');
-				for(var i = 0; i < hrefs.length; i++) {
-					s += '<li><a href="' + hrefs[i].href + '" target="' + hrefs[i].target + '" k="' + headers[k] + '">' + hrefs[i].innerHTML + '</a></li>';
-				}
-				s += '<li></li></ul></td>';
-				count++;
-			}
-		}
-		var width = (count > 11 ? 11 : count) * 80;
-		s = '<div class="cnote" style="width:' + width + 'px"><span class="right"><a href="###" class="flbc" onclick="hideMenu();return false;"></a></span><h3>管理中心导航</h3></div>' +
-			'<div class="cmlist" style="width:' + width + 'px"><table id="mapmenu" cellspacing="0" cellpadding="0" ><tr>' + s +
-			'</tr></table></div>';
-		$('cmain').innerHTML = s;
-		$('cmain').style.width = (width > 1000 ? 1000 : width) + 'px';
-	}
-	initCpMap();
-	initCpMenus('mapmenu');
-	var cmcache = false;
-	function showMap() {
-		showMenu({'ctrlid':'cpmap','evt':'click', 'duration':3, 'pos':'00'});
-	}
-	function resetEscAndF5(e) {
-		e = e ? e : window.event;
-		actualCode = e.keyCode ? e.keyCode : e.charCode;
-		if(actualCode == 27) {
-			if($('cpmap_menu').style.display == 'none') {
-				showMap();
-			} else {
-				hideMenu();
-			}
-		}
-		if(actualCode == 116 && parent.main) {
-			parent.main.location.reload();
-			if(document.all) {
-				e.keyCode = 0;
-				e.returnValue = false;
-			} else {
-				e.cancelBubble = true;
-				e.preventDefault();
-			}
-		}
-	}
-	function uc_left_menu(uc_menu_data) {
-		var leftmenu = $('menu_uc');
-		leftmenu.innerHTML = '';
-		var html_str = '';
-		for(var i=0;i<uc_menu_data.length;i+=2) {
-			html_str += '<li><a href="'+uc_menu_data[(i+1)]+'" hidefocus="true" onclick="uc_left_switch(this)" target="main"><em onclick="menuNewwin(this)" title="新窗口打开"></em>'+uc_menu_data[i]+'</a></li>';
-		}
-		leftmenu.innerHTML = html_str;
-	}
-	var uc_left_last = null;
-	function uc_left_switch(obj) {
-		if(uc_left_last) {
-			uc_left_last.className = '';
-		}
-		obj.className = 'tabon';
-		uc_left_last = obj;
-	}
-	function uc_modify_sid(sid) {
-		$('header_uc').href = 'http://www.dz.com/uc_server/admin.php?m=frame';
 	}
 
-	_attachEvent(document.documentElement, 'keydown', resetEscAndF5);
-	_attachEvent(window, 'resize', setMenuScroll, document);
-	_attachEvent(window, 'resize', resizeHeadermenu, document);
-	if(BROWSER.ie){
-		$('leftmenu').onmousewheel = function(e) { menuScroll(3, e) };
-	} else {
-		$('leftmenu').addEventListener("DOMMouseScroll", function(e) { menuScroll(3, e) }, false);
-	}
-	resizeHeadermenu();
+	toggleMenu('index');
 </script>
 
 </body>
